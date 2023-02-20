@@ -1,0 +1,18 @@
+<div style="display: flex; justify-content: center">
+    <div id="contacts-list">    
+        <h2>Contacts</h2>
+            <div class="contact-container">
+            {{#each this.model as |user|}}
+            <div class="contact-name">
+                    <LinkTo @route="chat" @model={{user}} class="userlink" {{on 'click' (fn this.setFriend user.id user.username)}}>
+                        {{user.username}}
+                    </LinkTo>
+            </div>
+            <br/>
+            {{/each}}
+            </div>
+        </div>
+    </div>
+<footer>
+    <LinkTo @route="login" {{on "click" this.logout}}></LinkTo>
+</footer>

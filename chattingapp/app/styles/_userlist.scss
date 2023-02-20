@@ -1,0 +1,89 @@
+#contacts-list {
+    margin-top: auto;
+    width: 700px;
+    border: #d0d8dc solid 1px;
+    border-radius: 6px;
+    height: 510px;
+    color: #111;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+#contacts-list h2 {
+    color: #111;
+    background: #e7ecee;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+    padding-top: 20px;
+    padding-left: 20px;
+    text-align: left;
+    height: 40px;
+    
+}
+
+#contact-container {
+    height: 50px;
+    display: flex;
+    justify-content:space-between;
+    margin: 5px 0;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+#contact-container:hover {
+    background-color: #e7ecee;
+}
+
+.contact-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    a{
+        text-decoration: none;
+        color: #111;
+    } 
+}
+
+img {
+    height: 40px;
+    width: 40px;
+    border-radius: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.userlink{
+    // position: fixed;
+    position: relative;
+    right :10px;
+    top: 10px;
+    background-color: aliceblue;
+    color: rgb(114, 207, 253);
+    width: 350px;
+    height: 30px;
+    // font-size: 32px;
+    border-radius: 10%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        text-decoration: none;
+        color: #b3b3b3; 
+    }
+    .cart-count{
+        position: absolute;
+        top:10px;
+        right: 10px;
+        font-size: 14px;
+        color: white;
+        background-color: red;
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
+    }
+  }

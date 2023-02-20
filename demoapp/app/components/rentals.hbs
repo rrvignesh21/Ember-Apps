@@ -1,0 +1,12 @@
+<div class="rentals">
+    <label>Search Bar</label>
+    <Input @value={{this.query}} class="light" />
+    <p>{{this.query}}</p> 
+    <ul class="results">
+        <Rentals::Filter @rentals={{@rentals}} @query={{this.query}} as |result|>
+        {{#each result as |rental|}}
+            <li><Rental @rental={{rental}} /></li>
+        {{/each}}
+        </Rentals::Filter>
+    </ul>
+</div>

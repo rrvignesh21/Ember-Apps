@@ -1,0 +1,16 @@
+
+<form action="#" method="post">
+  <h2>Login</h2>
+		<div>   
+			<label for="username" class="floatLabel">User Name</label>
+			<input id="username" name="username" type="text">
+		</div>
+		<div>
+			<label for="password" class="floatLabel">Password</label>
+			<input id="password" name="password" type="password">
+			<span>Enter a password longer than 8 characters</span>
+		</div>
+		<div>
+			<input type="button" value="Login" id="submit" {{on "click" this.submitForm}}>
+		</div>
+</form>

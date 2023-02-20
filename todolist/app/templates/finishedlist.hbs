@@ -1,0 +1,13 @@
+<div class="container">
+    <h1>Finished Task List</h1>
+    <div id="tasks">
+        {{#each this.model as |task|}}
+        <div class="task">
+        <span> {{task.task}} </span>
+        </div>
+        {{/each}}
+    </div>
+</div>
+<div id="footer">
+    <LinkTo @route="index"><h2>Home</h2></LinkTo>
+</div>

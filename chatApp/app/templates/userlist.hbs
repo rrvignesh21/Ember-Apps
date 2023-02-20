@@ -1,0 +1,9 @@
+<div>
+    {{#each this.model as |user|}}
+        <div>
+            <LinkTo @route="chat" @model={{user}}>
+                {{user.username}}
+            </LinkTo>
+        </div>
+    {{/each}}
+</div>

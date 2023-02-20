@@ -1,0 +1,14 @@
+<div class="menu"> 
+    <div class="name">{{@model.username}}</div>
+</div>
+<ol id ="chat-logs">
+
+</ol>
+<footer class="chat-input">
+  {{!-- ID : {{@model.id}} --}}
+      <form>
+        <Input @type="text" @value={{this.query}} id="chat-input" placeholder="Send a message..."/>
+      <button type="button" class="chat-submit" id="chat-submit" {{on "click" (fn this.sendMessage @model.id @model.username)}}>send</button>
+      </form>    
+</footer>
+

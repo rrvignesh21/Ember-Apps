@@ -1,0 +1,11 @@
+{{!-- {{page-title "Studentdetails"}}
+<h3>Student Details</h3>
+<ul>
+{{#each @model as |Studentdetails|}}
+    <li>{{Studentdetails}}</li>
+{{/each}}
+</ul> --}}
+<PeopleList 
+    @title = "list of Students"
+    @people = {{@model}}
+/>

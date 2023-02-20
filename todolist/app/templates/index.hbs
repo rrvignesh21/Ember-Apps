@@ -1,0 +1,25 @@
+<div class="container">
+    <h2 id="title">To-Do List</h2>
+    <div id="newtask">
+    <Input id="task" @type="text" @value ={{this.query}}/>
+    <button type="button" {{on "click" this.addTask}} >Add</button>
+    </div>
+    <div id="tasks">
+        {{#each this.currenttasks as |task|}}
+        <div class="task">
+        <span>
+            {{task.task}}
+        </span>
+        <button type="button" {{on "click" (fn this.finishTask task)}}></button>
+        </div>
+        {{/each}}
+    </div>
+</div>
+<footer>
+    <div id="footer">
+        <LinkTo @route="finishedlist">
+          <h2>Finished Task</h2>
+        </LinkTo>
+    </div>
+</footer>
+
